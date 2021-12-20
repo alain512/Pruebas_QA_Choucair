@@ -128,7 +128,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-12-2021 10:03</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-12-2021 11:25</span>
     <br style="clear:left"/>
 </div>
 
@@ -179,6 +179,10 @@
 
     <div class="clr"></div>
 
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given que el usuario se encuentra ubicado en la pagina my store<br>When cuando el usuario seleccione el boton signin<br>And el usuario ingrese los datos de registro<br><table class='embedded'><tbody><tr><td>correo</td></tr><tr><td>&lt;correo&gt;</td></tr></tbody></table><br>Then el usuario vera el siguiente mensaje Welcome to your account. Here you can manage all of your personal information and orders.</div>
+    </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
@@ -188,7 +192,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Assertion error: Expected: an element that is visible but: no matching element found by id: id_gender1</span>
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -204,13 +208,20 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>java.lang.AssertionError </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>co.com.pruebas.evaluacion.tasks.IngresarInformacion.performAs(IngresarInformacion.java:19)<br />co.com.pruebas.evaluacion.stepdefinitions.RegistroStepDefinition.elUsuarioIngreseLosDatosDeRegistro(RegistroStepDefinition.java:39)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                        <pre>co.com.pruebas.evaluacion.interactions.SeleccionarBoton.performAs(SeleccionarBoton.java:13)<br />co.com.pruebas.evaluacion.stepdefinitions.RegistroStepDefinition.cuandoElUsuarioSeleccioneElBotonSignin(RegistroStepDefinition.java:37)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.className: login to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.com.pruebas.evaluacion.interactions.SeleccionarBoton.performAs(SeleccionarBoton.java :13)<br />co.com.pruebas.evaluacion.stepdefinitions.RegistroStepDefinition.cuandoElUsuarioSeleccioneElBotonSignin(RegistroStepDefinition.java :37)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -218,13 +229,20 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource545361978570269641.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource7719304689749152849.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="ddd1bff823d37ee1f5ede599756b67833957360669e28f2f5f3b2e8cebe2d360.png" title=" And el usuario ingrese los datos de registro" width="1282"/>
-                <img src="ddd1bff823d37ee1f5ede599756b67833957360669e28f2f5f3b2e8cebe2d360.png" title=" Alain ingresar informacion: <span class='failing-color'>FAILURE</span>" width="1282"/>
+                <img src="f5a7424c96da6fa183804a5c18aa3276f4e482d74efc9e751fbed5a6b44f7dbd.png" title=" Example #1: {correo=alain.quintero10@outlook.com}" width="1282"/>
+                <img src="f5a7424c96da6fa183804a5c18aa3276f4e482d74efc9e751fbed5a6b44f7dbd.png" title=" When cuando el usuario seleccione el boton signin" width="1282"/>
+                <img src="f5a7424c96da6fa183804a5c18aa3276f4e482d74efc9e751fbed5a6b44f7dbd.png" title=" Alain seleccionar boton" width="1282"/>
+                <img src="f5a7424c96da6fa183804a5c18aa3276f4e482d74efc9e751fbed5a6b44f7dbd.png" title=" Alain clicks on Boton que permite acceder al formulario de registro" width="1282"/>
+                <img src="70226687b683841ab2fefcff1e6ed8810ac8bc8d7e7d788e4894472378eeedc7.png" title=" Example #2: {correo=alain.quintero10@outlook.com}" width="1282"/>
+                <img src="70226687b683841ab2fefcff1e6ed8810ac8bc8d7e7d788e4894472378eeedc7.png" title=" And el usuario ingrese los datos de registro
+| correo |
+| alain.quintero10@outlook.com |" width="1282"/>
+                <img src="70226687b683841ab2fefcff1e6ed8810ac8bc8d7e7d788e4894472378eeedc7.png" title=" Alain ingresar informacion: <span class='failing-color'>FAILURE</span>" width="1282"/>
             </div>
         </div>
 

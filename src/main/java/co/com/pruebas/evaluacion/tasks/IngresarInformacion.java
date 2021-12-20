@@ -1,4 +1,5 @@
 package co.com.pruebas.evaluacion.tasks;
+import co.com.pruebas.evaluacion.models.InfoUsuario;
 import co.com.pruebas.evaluacion.userinterfaces.PageRegistro;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -10,13 +11,21 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 
+import java.util.List;
+
 import static co.com.pruebas.evaluacion.userinterfaces.PageRegistro.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class IngresarInformacion implements Task {
+
+    private String correo;
+
+    public IngresarInformacion(List<InfoUsuario> correo){
+        this.correo = correo.get(0).getCorreo();
+    }
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue("alain.quintero5@outlook.com").into(TXT_EMAIL),
+        actor.attemptsTo(Enter.theValue(correo).into(TXT_EMAIL),
                 Click.on(BTN_CREATECOUNT),
                 WaitUntil.the(RB_GENERO, WebElementStateMatchers.isVisible()).forNoMoreThan(60).seconds(),
                 Click.on(RB_GENERO),
@@ -39,7 +48,7 @@ public class IngresarInformacion implements Task {
                 Click.on(BTN_SUBMITACOUNT)
                 );
     }
-    public static IngresarInformacion deRegistro(){
-        return instrumented(IngresarInformacion.class);
+    public static IngresarInformacion deRegistro(List<InfoUsuario> correo){
+        return instrumented(IngresarInformacion.class,correo);
     }
 }

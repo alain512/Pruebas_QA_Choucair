@@ -1,6 +1,7 @@
 package co.com.pruebas.evaluacion.stepdefinitions;
 
 import co.com.pruebas.evaluacion.interactions.SeleccionarBoton;
+import co.com.pruebas.evaluacion.models.InfoUsuario;
 import co.com.pruebas.evaluacion.questions.ValidarMensaje;
 import co.com.pruebas.evaluacion.tasks.IngresarInformacion;
 import cucumber.api.java.Before;
@@ -14,6 +15,8 @@ import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.hamcrest.Matchers;
+
+import java.util.List;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
@@ -35,8 +38,8 @@ public class RegistroStepDefinition {
     }
 
     @And("^el usuario ingrese los datos de registro$")
-    public void elUsuarioIngreseLosDatosDeRegistro() {
-        OnStage.theActorInTheSpotlight().attemptsTo(IngresarInformacion.deRegistro());
+    public void elUsuarioIngreseLosDatosDeRegistro(List <InfoUsuario> correo) {
+        OnStage.theActorInTheSpotlight().attemptsTo(IngresarInformacion.deRegistro(correo));
     }
 
     @Then("^el usuario vera el siguiente mensaje (.*)$")
