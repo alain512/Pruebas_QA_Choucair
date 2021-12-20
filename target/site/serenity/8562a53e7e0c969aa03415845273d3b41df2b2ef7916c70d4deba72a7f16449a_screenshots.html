@@ -128,7 +128,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-12-2021 11:25</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-12-2021 16:44</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,7 +192,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">Assertion error: Expected: an element that is visible but: no matching element found by id: id_gender1</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -208,20 +208,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>java.lang.AssertionError </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>co.com.pruebas.evaluacion.interactions.SeleccionarBoton.performAs(SeleccionarBoton.java:13)<br />co.com.pruebas.evaluacion.stepdefinitions.RegistroStepDefinition.cuandoElUsuarioSeleccioneElBotonSignin(RegistroStepDefinition.java:37)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                        <pre>co.com.pruebas.evaluacion.tasks.IngresarInformacion.performAs(IngresarInformacion.java:28)<br />co.com.pruebas.evaluacion.stepdefinitions.RegistroStepDefinition.elUsuarioIngreseLosDatosDeRegistro(RegistroStepDefinition.java:42)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.className: login to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>co.com.pruebas.evaluacion.interactions.SeleccionarBoton.performAs(SeleccionarBoton.java :13)<br />co.com.pruebas.evaluacion.stepdefinitions.RegistroStepDefinition.cuandoElUsuarioSeleccioneElBotonSignin(RegistroStepDefinition.java :37)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -229,20 +222,16 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource7719304689749152849.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource8823008583342446697.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="f5a7424c96da6fa183804a5c18aa3276f4e482d74efc9e751fbed5a6b44f7dbd.png" title=" Example #1: {correo=alain.quintero10@outlook.com}" width="1282"/>
-                <img src="f5a7424c96da6fa183804a5c18aa3276f4e482d74efc9e751fbed5a6b44f7dbd.png" title=" When cuando el usuario seleccione el boton signin" width="1282"/>
-                <img src="f5a7424c96da6fa183804a5c18aa3276f4e482d74efc9e751fbed5a6b44f7dbd.png" title=" Alain seleccionar boton" width="1282"/>
-                <img src="f5a7424c96da6fa183804a5c18aa3276f4e482d74efc9e751fbed5a6b44f7dbd.png" title=" Alain clicks on Boton que permite acceder al formulario de registro" width="1282"/>
-                <img src="70226687b683841ab2fefcff1e6ed8810ac8bc8d7e7d788e4894472378eeedc7.png" title=" Example #2: {correo=alain.quintero10@outlook.com}" width="1282"/>
-                <img src="70226687b683841ab2fefcff1e6ed8810ac8bc8d7e7d788e4894472378eeedc7.png" title=" And el usuario ingrese los datos de registro
+                <img src="b72e636c6b48783d00cf6188690311391a152272c7b37b2b041b293520197c99.png" title=" Example #2: {correo=alain.quintero12@outlook.com}" width="1282"/>
+                <img src="b72e636c6b48783d00cf6188690311391a152272c7b37b2b041b293520197c99.png" title=" And el usuario ingrese los datos de registro
 | correo |
-| alain.quintero10@outlook.com |" width="1282"/>
-                <img src="70226687b683841ab2fefcff1e6ed8810ac8bc8d7e7d788e4894472378eeedc7.png" title=" Alain ingresar informacion: <span class='failing-color'>FAILURE</span>" width="1282"/>
+| alain.quintero12@outlook.com |" width="1282"/>
+                <img src="b72e636c6b48783d00cf6188690311391a152272c7b37b2b041b293520197c99.png" title=" Alain ingresar informacion: <span class='failing-color'>FAILURE</span>" width="1282"/>
             </div>
         </div>
 

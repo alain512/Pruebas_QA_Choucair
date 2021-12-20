@@ -10,5 +10,5 @@
       Then el usuario vera el siguiente mensaje Welcome to your account. Here you can manage all of your personal information and orders.
 Examples:
   | correo                       |
-  | alain.quintero10@outlook.com |
-  | alain.quintero10@outlook.com |
+  | alain.quintero13@outlook.com |
+  | alain.quintero13@outlook.com |
